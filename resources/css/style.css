@@ -17,6 +17,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ===================================== */
 /* REUSABLE COMPONENTS */
 /* ===================================== */
@@ -99,4 +103,37 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: all 200ms;
+    padding-bottom: 5px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
