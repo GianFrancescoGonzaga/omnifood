@@ -14,38 +14,38 @@ $(document).ready(() => {
 	);
 
 	// Animations on Scroll
-    
-    // Features Section
-    $(".wp-1").waypoint(
+
+	// Features Section
+	$(".wp-1").waypoint(
 		function(direction) {
 			$(".wp-1").addClass("animated fadeIn");
 		},
 		{ offset: "50%" }
-    );
-    
-    // How it Works Section
-    $(".wp-2").waypoint(
-        function (direction) {
-            $(".wp-2").addClass("animated fadeInUp");
-        },
-        { offset: "50%" }
-    );
+	);
 
-    // Cities Section
-    $(".wp-3").waypoint(
-        function (direction) {
-            $(".wp-3").addClass("animated fadeIn");
-        },
-        { offset: "10%" }
-    );
+	// How it Works Section
+	$(".wp-2").waypoint(
+		function(direction) {
+			$(".wp-2").addClass("animated fadeInUp");
+		},
+		{ offset: "50%" }
+	);
 
-    // Cities Section
-    $(".wp-4").waypoint(
-        function (direction) {
-            $(".plan-box").addClass("animated pulse");
-        },
-        { offset: "35%" }
-    );
+	// Cities Section
+	$(".wp-3").waypoint(
+		function(direction) {
+			$(".wp-3").addClass("animated fadeIn");
+		},
+		{ offset: "10%" }
+	);
+
+	// Cities Section
+	$(".wp-4").waypoint(
+		function(direction) {
+			$(".plan-box").addClass("animated pulse");
+		},
+		{ offset: "35%" }
+	);
 
 	// Scroll buttons
 	$(".js--scroll-to-plans").click(function() {
@@ -64,6 +64,13 @@ $(document).ready(() => {
 			},
 			1000
 		);
+	});
+
+	// Mobile Nav
+	$(".mobile-nav-icon").click(function() {
+		const nav = $(".main-nav");
+
+		nav.slideToggle(200)
 	});
 
 	// Navigation Scroll
